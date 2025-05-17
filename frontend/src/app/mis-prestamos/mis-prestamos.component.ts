@@ -62,7 +62,7 @@ filtroBusqueda: string = '';
 
  materialesFiltrados(): Historial[] {
   if (!this.filtroBusqueda.trim()) {
-    return this.historiales;  // Cambia this.historial por this.historiales
+    return this.historiales;  
   }
 
   const filtro = this.filtroBusqueda.toLowerCase();

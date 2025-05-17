@@ -32,6 +32,12 @@ import { MaterialDetalleComponent } from './material-detalle/material-detalle.co
 import { PrestarMaterialComponent } from './prestar-material/prestar-material.component';
 import { DevolverPrestamoComponent } from './devolver-prestamo/devolver-prestamo.component';
 import { MisPrestamosComponent } from './mis-prestamos/mis-prestamos.component';
+import { ListaCategoriasComponent } from './lista-categorias/lista-categorias.component';
+import { AgregarCategoriaComponent } from './agregar-categoria/agregar-categoria.component';
+import { ActualizarCategoriaComponent } from './actualizar-categoria/actualizar-categoria.component';
+import { ActualizarCategoriasComponent } from './actualizar-categorias/actualizar-categorias.component';
+import { DetalleCategoriaComponent } from './detalle-categoria/detalle-categoria.component';
+import { ReporteHistorialPrestamosComponent } from './reporte-historial-prestamos/reporte-historial-prestamos.component';
 
 
 
@@ -60,7 +66,13 @@ import { MisPrestamosComponent } from './mis-prestamos/mis-prestamos.component';
     MaterialDetalleComponent,
     PrestarMaterialComponent,
     DevolverPrestamoComponent,
-    MisPrestamosComponent
+    MisPrestamosComponent,
+    ListaCategoriasComponent,
+    AgregarCategoriaComponent,
+    ActualizarCategoriaComponent,
+    ActualizarCategoriasComponent,
+    DetalleCategoriaComponent,
+    ReporteHistorialPrestamosComponent
   
   ],
   imports: [

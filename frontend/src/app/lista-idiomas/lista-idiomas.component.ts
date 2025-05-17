@@ -13,6 +13,9 @@ import Swal from 'sweetalert2';
 export class ListaIdiomasComponent {
 
   idiomas: Idioma[];
+  p: number = 1;  
+  itemsPerPage: number = 5;
+
 
 
   constructor(private idiomaServicio: IdiomaService, private route:Router) { 
@@ -24,7 +27,7 @@ export class ListaIdiomasComponent {
   this.obtenerIdiomas();
   }
 
-
+//
   private obtenerIdiomas() {
     this.idiomaServicio.obtenerListaIdiomas().subscribe(dato => { 
 

@@ -25,6 +25,11 @@ import { MaterialDetalleComponent } from './material-detalle/material-detalle.co
 import { PrestarMaterialComponent } from './prestar-material/prestar-material.component';
 import { DevolverPrestamoComponent } from './devolver-prestamo/devolver-prestamo.component';
 import { MisPrestamosComponent } from './mis-prestamos/mis-prestamos.component';
+import { ListaCategoriasComponent } from './lista-categorias/lista-categorias.component';
+import { AgregarCategoriaComponent } from './agregar-categoria/agregar-categoria.component';
+import { ActualizarCategoriaComponent } from './actualizar-categoria/actualizar-categoria.component';
+import { DetalleCategoriaComponent } from './detalle-categoria/detalle-categoria.component';
+import { ReporteHistorialPrestamosComponent } from './reporte-historial-prestamos/reporte-historial-prestamos.component';
 
 const routes: Routes = [
   {
@@ -54,6 +59,12 @@ const routes: Routes = [
        { path: 'list_materiales_prestar', component:PrestarMaterialComponent },
        {path: 'devolver_prestamo',component:DevolverPrestamoComponent},
        {path: 'mis_prestamos',component:MisPrestamosComponent},
+       {path: 'list_categorias',component:ListaCategoriasComponent, canActivate: [adminGuard]},
+       {path: 'add_categoria',component:AgregarCategoriaComponent, canActivate: [adminGuard]},
+       {path: 'update_categoria/:id',component:ActualizarCategoriaComponent, canActivate: [adminGuard] },
+        { path: 'details_categoria/:id', component: DetalleCategoriaComponent , canActivate: [adminGuard] },
+         { path: 'historial_prestamos_devueltos', component: ReporteHistorialPrestamosComponent , canActivate: [adminGuard] },
+
 
       { path: '', redirectTo: 'home', pathMatch: 'full' }
     ]

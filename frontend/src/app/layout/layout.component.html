@@ -72,6 +72,13 @@
             <span class="align-middle">PRESTAR MATERIAL</span>
           </a>
         </li>
+         <li class="sidebar-item" *ngIf="user.roles[0].roleEnum == 'ADMIN'" routerLink="/list_categorias"
+          routerLinkActive="active">
+          <a class="sidebar-link">
+            <i class="align-middle" data-feather="sliders"></i>
+            <span class="align-middle">VER CATEGORIAS</span>
+          </a>
+        </li>
         <li class="sidebar-item" *ngIf="user.roles[0].roleEnum == 'ESTUDIANTE'" routerLink="/mis_prestamos"
           routerLinkActive="active">
           <a class="sidebar-link">
